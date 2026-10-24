@@ -1,0 +1,212 @@
+
+/* Allgemeine Gestaltung meiner Webseite */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #363238;
+    background-color: white;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Navigation oben auf meiner Webseite */
+nav {
+    background-color: #F6F2EF;
+    padding: 15px;
+    border-bottom: 1px solid #C58E9E;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #652D40;
+}
+
+
+/* Mit CSS Grid teile ich meinen Lebenslauf in zwei Spalten.
+Die linke Spalte ist etwas schmaler als die rechte. */
+main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+
+/* Linke Spalte mit meinen persönlichen Informationen */
+aside {
+    background-color: #F6F2EF;
+    padding: 40px 35px;
+    border-right: 1px solid #C58E9E;
+    min-width: 0;
+}
+
+
+/* Mein Profilbild oben links */
+.profilbild {
+    display: block;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #C58E9E;
+    margin: 0 auto 35px auto;
+}
+
+
+/* Rechte Spalte mit Ausbildung, Beruf und Projekten */
+.lebenslauf-rechts {
+    padding: 40px 40px 60px 35px;
+    min-width: 0;
+}
+
+
+/* Mein Name oben rechts */
+header {
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #C58E9E;
+}
+
+h1 {
+    color: #652D40;
+    font-size: 42px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+/* Überschriften der einzelnen Bereiche */
+h2 {
+    color: #652D40;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* Kleine rosa Linie unter den Überschriften links */
+aside h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background-color: #C58E9E;
+    margin-top: 10px;
+}
+
+
+/* Unterüberschriften */
+h3 {
+    color: #363238;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    color: #363238;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* Absätze */
+p {
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+
+/* Datumsangaben kursiv und dunkelrot */
+.datum {
+    color: #652D40;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+
+/* Abstand zwischen den Bereichen */
+section {
+    margin-bottom: 35px;
+}
+
+
+/* Trennlinien zwischen den Bereichen rechts */
+.lebenslauf-rechts section {
+    border-bottom: 1px solid #C58E9E;
+    padding-bottom: 25px;
+}
+
+
+/* Die letzte Section braucht keine Trennlinie */
+.lebenslauf-rechts section:last-child {
+    border-bottom: none;
+}
+
+
+/* Listen */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+/* Links */
+a {
+    color: #652D40;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #8E6875;
+    background-color: #F6F2EF;
+    padding: 15px;
+    border-top: 1px solid #C58E9E;
+}
+
+
+/* Auf kleinen Bildschirmen stehen die Spalten
+untereinander, damit alles lesbar bleibt. */
+@media (max-width: 700px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        padding: 30px;
+        border-right: none;
+        border-bottom: 1px solid #C58E9E;
+    }
+
+    .lebenslauf-rechts {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+}

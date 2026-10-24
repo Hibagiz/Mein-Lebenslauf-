@@ -1,0 +1,60 @@
+
+/* Allgemeine Gestaltung */
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 1fr 80px;
+    gap: 10px;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Georgia, serif;
+    text-align: center;
+    color: #363238;
+}
+
+/* Header geht über alle drei Spalten */
+header {
+    grid-column: 1 / 4;
+    background-color: #652D40;
+    color: white;
+    padding: 30px;
+}
+
+/* Linke Seitenleiste */
+.links {
+    background-color: #EBD6DE;
+    padding: 30px;
+}
+
+/* Hauptbereich in der Mitte */
+main {
+    background-color: #F6F2EF;
+    padding: 30px;
+    position: relative;
+}
+
+main a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Rechte Seitenleiste */
+.rechts {
+    background-color: #EBD6DE;
+    padding: 30px;
+}
+
+/* Footer geht ebenfalls über alle drei Spalten */
+footer {
+    grid-column: 1 / 4;
+    background-color: #8E6875;
+    color: white;
+    padding: 20px;
+}
+
+/* Link zurück zum Lebenslauf */
+a {
+    color: #652D40;
+}

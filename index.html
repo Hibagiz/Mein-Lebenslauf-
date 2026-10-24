@@ -1,0 +1,233 @@
+
+<!doctype html>
+<!-- Das Grundgerüst mit doctype, html, head, meta und title hat VS Code
+automatisch erstellt, nachdem ich ein ! eingegeben habe.
+Deshalb erkläre ich hier nur die Elemente, die ich selbst verwendet habe. :) -->
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hiba's Lebenslauf</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- Mit nav erstelle ich eine Navigation, damit man direkt zu den
+    verschiedenen Bereichen springen kann.
+    Mit ul fasse ich die Navigationspunkte in einer Liste zusammen
+    und li nutze ich für die einzelnen Punkte.
+    Mit a erstelle ich einen Link und href gibt an, wohin er führt.
+    Durch die id springt man direkt zum jeweiligen Bereich. -->
+
+    <nav>
+        <ul>
+            <li><a href="#Profil">Profil</a></li>
+            <li><a href="#Kontakt">Kontakt</a></li>
+            <li><a href="#Ausbildung">Ausbildung</a></li>
+            <li><a href="#Berufserfahrung">Berufserfahrung</a></li>
+            <li><a href="#Engagement">Engagement und Projekte</a></li>
+            <li><a href="Holygrail.html">Holy Grail Layout</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- main enthält den Hauptinhalt meines Lebenslaufs.
+    Mit CSS Grid teile ich ihn in zwei Spalten auf. -->
+
+    <main>
+
+        <!-- LINKE SPALTE
+        aside habe ich für die zusätzlichen persönlichen Informationen
+        neben meinem beruflichen Werdegang gewählt. -->
+
+        <aside>
+
+            <!-- Mit img füge ich mein Profilbild ein.
+            src gibt an, wo das Bild gespeichert ist.
+            Mit class kann ich das Bild in CSS gestalten. -->
+
+            <img class="profilbild"
+                 src="Bilder/cat.png" >
+
+
+            <!-- Mit h2 mache ich die Überschriften der einzelnen Bereiche.
+            Diese werden stärker hervorgehoben als h3.
+            Mit id kann ich die Bereiche über die Navigation erreichen. -->
+
+            <h2 id="Profil">Profil</h2>
+
+            <!-- p nutze ich für meinen Vorstellungstext. -->
+
+            <p>
+                Engagierte und lernfreudige Studentin im Studiengang
+                Gründung, Innovation Entwicklung (B.Sc.) an der
+                Hochschule Flensburg. Ich probiere mich gerne in
+                unterschiedlichen Bereichen aus und eigne mir neues
+                Wissen selbstständig an. Besonders interessieren mich
+                Innovation, digitale Lösungen und neue Technologien.
+                Erste Grundkenntnisse in der Webentwicklung habe ich
+                mir eigenständig angeeignet.
+            </p>
+
+
+            <h2 id="Kontakt">Kontakt</h2>
+
+            <!-- Eine Liste eignet sich gut, um meine Kontaktdaten
+            übersichtlich einzeln aufzulisten. -->
+
+            <ul>
+                <li>012345678</li>
+
+                <!-- mailto öffnet beim Anklicken das E-Mail-Programm
+                mit meiner E-Mail-Adresse als Empfänger. -->
+
+                <li>
+                    <a href="mailto:hibaghiyati@gmail.com">
+                        hibaghiyati@gmail.com
+                    </a>
+                </li>
+
+                <li>Beispieladresse 15, 12345 Flensburg</li>
+
+                <!-- Das LinkedIn-Logo ist in einen Link eingebaut,
+                damit man direkt zu meinem Profil kommt. -->
+
+                <li>
+                    <a href="https://linkedin.com/in/hibaghiyati">
+                        <img src="Bilder/linkedin.png"
+                             alt="LinkedIn-Logo"
+                             height="30">
+                    </a>
+                </li>
+            </ul>
+
+
+            <!-- section gruppiert zusammengehörige Inhalte
+            als eigene Themenbereiche. -->
+
+            <section>
+                <h2>Sprachen</h2>
+
+                <!-- strong hebt die Sprachen hervor. -->
+
+                <ul>
+                    <li><strong>Deutsch:</strong> Muttersprache</li>
+                    <li><strong>Arabisch:</strong> Muttersprache</li>
+                    <li><strong>Dänisch:</strong> Muttersprache</li>
+                    <li><strong>Englisch:</strong> Sehr gute Kenntnisse</li>
+                    <li><strong>Französisch:</strong> Grundkenntnisse</li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h2>Kenntnisse</h2>
+
+                <h3>Microsoft Office</h3>
+                <ul>
+                    <li>Gute Kenntnisse</li>
+                </ul>
+
+                <h3>Social Media & Content</h3>
+                <ul>
+                    <li>Planung und Erstellung eigener Social-Media-Inhalte mit CapCut</li>
+                    <li>Betreuung und Pflege von Social-Media-Kanälen</li>
+                </ul>
+
+                <h3>Webentwicklung</h3>
+                <ul>
+                    <li>Grundkenntnisse in HTML, CSS und JavaScript, selbstständig angeeignet</li>
+                </ul>
+            </section>
+
+        </aside>
+
+
+        <!-- RECHTE SPALTE
+        Mit div fasse ich alle Bereiche zusammen, die rechts
+        stehen sollen. So behandelt CSS Grid sie als eine Spalte. -->
+
+        <div class="lebenslauf-rechts">
+
+            <!-- header ist der obere Bereich der rechten Spalte.
+            h1 zeigt meinen Namen als Hauptüberschrift an. -->
+
+            <header>
+                <h1>Hiba Ghiyati</h1>
+            </header>
+
+
+            <section>
+                <h2 id="Ausbildung">Ausbildung</h2>
+
+                <h3>B.Sc. Gründung Innovation Entwicklung</h3>
+                <p class="datum">Seit Sep. 2026</p>
+
+                <ul>
+                    <li>Schwerpunkte: Entrepreneurship · Innovation · Wirtschaft · Ingenieurwesen · Informatik · Team & Projektarbeit</li>
+                </ul>
+
+                <h3>Allgemeine Hochschulreife</h3>
+                <p class="datum">Sep. 2023 – Juli 2026</p>
+
+                <ul>
+                    <li>Duborg-Skolen, Flensburg</li>
+                    <li>Abschluss Notenschnitt: 1,7</li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h2 id="Berufserfahrung">Berufserfahrung</h2>
+
+                <h3>Minijob im Einzelhandel</h3>
+                <h4>Intersport Hans Jürgensen</h4>
+                <p class="datum">Seit Sep. 2024</p>
+
+                <ul>
+                    <li>Kassiertätigkeiten, Kundenberatung & Unterstützung bei Verkauf und Warenpräsentation</li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h2 id="Engagement">Engagement & Projekte</h2>
+
+                <h3>Startup-Projekt · Hochschule Flensburg</h3>
+                <p class="datum">Seit 09/2026</p>
+
+                <ul>
+                    <li>Aufbau eines eigenen Startups im Bereich digitale Lösungen</li>
+                    <li>Entwicklung einer KI-gestützten Automatisierungslösung</li>
+                    <li>Entwicklung der Geschäftsidee, Marktanalyse und Ausarbeitung des Geschäftsmodells</li>
+                    <li>Arbeit im interdisziplinären Team an einer praxisnahen Lösung</li>
+                </ul>
+
+                <h3>Veranstaltungsmoderation</h3>
+                <p class="datum">17.09.2026</p>
+
+                <ul>
+                    <li>Moderation eines Pitch-Events der Hochschule Flensburg mit rund 200 Gästen</li>
+                </ul>
+
+                <h3>Organisation eines Nachhaltigkeitsfestivals</h3>
+                <p class="datum">Aug. 2023</p>
+
+                <ul>
+                    <li>Mitarbeit bei der Vorbereitung und Durchführung der organisatorischen Aufgaben und Veranstaltungsabläufen</li>
+                </ul>
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- footer ist der untere Bereich meiner Webseite. -->
+    <footer>
+        <p>Lebenslauf von Hiba Ghiyati</p>
+    </footer>
+
+</body>
+</html>
